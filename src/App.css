@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(#621115 50%, #6a202e 50%);
+}
+.App{
+  background-color: #800118;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TodoWrapper{
+  background-color: #621115;
+  width: 50%;
+  margin: auto;
+  padding: 10%;
+}
+.TodoForm{
+  background-color: inherit;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.Todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(74, 4, 4);
+  color: #888787dd;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.todo-input{
+  background-color: inherit;
+  border: 1px solid #888787dd;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(94, 93, 93);
+  width:100%;
+  margin-bottom: 10px;
+}
+.todo-input::placeholder{
+  color: #888787dd;
+}
+
+.todo-btn{
+  background-color: rgb(74, 4, 4);
+  width: 30%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  color: #888787dd;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.fa-trash{
+  margin-left: 0.75rem;
+}
+.completed{
+  color: #888787dd;
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
+  .TodoForm{
+    background-color: inherit;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  .todo-btn{
+    background-color: rgb(74, 4, 4);
+    width: 200%;
+    border-radius: 10px;
+    display: block;
+    margin-left: -50%;
+    color: #888787dd;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+  }
+
+  #h1{
+    width: 300%;
+    margin-left: -90%;
+  }
+  #error{
+    width: 300%;
+    margin-left: -90%;
+  }
+  .todo-input{
+    background-color: inherit;
+    border: 1px solid #888787dd;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    color: rgb(94, 93, 93);
+    width:400%;
+    margin-bottom: 10px;
+    margin-left: -150%;
+  } 
+    .Todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300%;
+    background-color: rgb(74, 4, 4);
+    color: #888787dd;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-left: -100%;
+    cursor: pointer;
+  }
+}
+ 
